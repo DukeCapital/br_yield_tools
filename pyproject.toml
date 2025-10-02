@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "br_yield_tools"
+version = "0.1.0"
+description = "Ferramentas de gross-up e equivalência de taxas (Brasil)"
+authors = [{name="Pedro Maia", email="phmaia273@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["finance", "brazil", "CDI", "gross-up", "IOF", "IR", "fixed income"]
+
+[project.urls]
+Homepage = "https://github.com/DukeCapital/br_yield_tools"
+
+[tool.pytest.ini_options]
+python_files = "test_*.py"
+addopts = "-q"
